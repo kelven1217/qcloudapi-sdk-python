@@ -131,6 +131,10 @@ class QcloudApi(object):
         elif module == 'emr':
             from .modules.emr import Emr
             service = Emr(config)
+        # add wss module 'ssl module' by kelven1217
+        elif module == 'wss':
+            from .modules.sts import Wss
+            service = Wss(config)
         elif module == 'sts':
             from .modules.sts import Sts
             service = Sts(config)

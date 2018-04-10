@@ -1,5 +1,8 @@
 *.pyc
 
+# build
+build/
+
 # twine
 dist/
 
